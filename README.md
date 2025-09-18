@@ -29,31 +29,6 @@ Step into the shoes of a corporate executive facing real-world crisis scenarios.
 
 </div>
 
-### Mobile Experience
-<div align="center">
-
-**Mobile Intro Screen**
-![Mobile Intro Screen](screenshots/Moblie%20Intro%20Screen.png)
-
-**Mobile Game Lobby**
-![Mobile Game Lobby Screen](screenshots/Mobile%20Game%20Lobby%20Screen.png)
-
-**Mobile Loading Screen**
-![Mobile Loading Screen](screenshots/Mobile%20Loading%20Screen.png)
-
-**Mobile Game Form**
-![Mobile Game Form Screen](screenshots/Mobile%20Game%20Form%20Screen.png)
-
-**Mobile Game Form 2**
-![Mobile Game Form2 Screen](screenshots/Mobile%20Game%20Form2%20Screen.png)
-
-**Mobile Game Interface**
-![Mobile Game Interface Screen](screenshots/Mobile%20Game%20Interface%20Screen.png)
-
-**Mobile Results Screen**
-![Mobile Game Results Screen](screenshots/Mobile%20Game%20Results%20Screen.png)
-
-</div>
 
 ## ✨ Enhanced UI Features
 
