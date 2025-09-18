@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Crisis Game API Test</h1>
+    <button onclick="testPing()">Test Ping</button>
+    <button onclick="testStart()">Test Start Game</button>
+    <div id="result"></div>
+
+    <script>
+        async function testPing() {
+            try {
+                const response = await fetch('http://localhost:8080/api/ping');
+                const data = await response.json();
+                document.getElementById('result').innerHTML = 'Ping result: ' + JSON.stringify(data);
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Ping error: ' + error.message;
+            }
+        }
+
+        async function testStart() {
+            try {
+                const payload = {
+                    name: "Test Player",
+                    role: "Communications Director",
+                    department: "Public Relations",
+                    experience: "Senior",
+                    difficulty: "Medium"
+                };
+                
+                const response = await fetch('http://localhost:8080/api/game/start', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload)
+                });
+                
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status + ': ' + response.statusText);
+                }
+                
+                const data = await response.json();
+                document.getElementById('result').innerHTML = 'Start game result: ' + JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Start game error: ' + error.message;
+                console.error('Error details:', error);
+            }
+        }
+    </script>
+</body>
+</html>

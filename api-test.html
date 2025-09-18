@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Crisis Game API Test</h1>
+    <button onclick="testPing()">Test Ping</button>
+    <button onclick="testGeminiAPI()">Test Gemini API</button>
+    <button onclick="testGameStart()">Test Game Start</button>
+    <div id="results"></div>
+
+    <script>
+        async function testPing() {
+            const results = document.getElementById('results');
+            results.innerHTML = 'Testing ping...';
+            
+            try {
+                const response = await fetch('http://localhost:8080/api/ping');
+                const data = await response.json();
+                results.innerHTML = `Ping Success: ${JSON.stringify(data)}`;
+            } catch (error) {
+                results.innerHTML = `Ping Error: ${error.message}`;
+            }
+        }
+
+        async function testGeminiAPI() {
+            const results = document.getElementById('results');
+            results.innerHTML = 'Testing Gemini API... This may take a moment...';
+            
+            try {
+                const response = await fetch('http://localhost:8080/api/test-gemini');
+                const data = await response.json();
+                
+                if (data.success) {
+                    results.innerHTML = `<div style="color: green;"><strong>Gemini API Success!</strong><br>Response: ${data.result}</div>`;
+                } else {
+                    results.innerHTML = `<div style="color: red;">Gemini API Failed: ${JSON.stringify(data)}</div>`;
+                }
+            } catch (error) {
+                results.innerHTML = `<div style="color: red;">Gemini API Error: ${error.message}</div>`;
+            }
+        }
+
+        async function testGameStart() {
+            const results = document.getElementById('results');
+            results.innerHTML = 'Testing game start...';
+            
+            try {
+                const payload = {
+                    name: "Test User",
+                    department: "IT",
+                    experienceLevel: "mid",
+                    leadershipStyle: "collaborative"
+                };
+                
+                const response = await fetch('http://localhost:8080/api/game/start', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                
+                const data = await response.json();
+                results.innerHTML = `Game Start Success: ${JSON.stringify(data, null, 2)}`;
+            } catch (error) {
+                results.innerHTML = `Game Start Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>
