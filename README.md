@@ -7,6 +7,54 @@ An immersive, AI-powered crisis communication simulation that challenges players
 
 Step into the shoes of a corporate executive facing real-world crisis scenarios. Make critical decisions, manage stakeholders, and navigate through complex challenges that test your communication and leadership skills across 10 intense decision rounds.
 
+## 📸 Screenshots
+
+### Desktop Experience
+<div align="center">
+
+**Intro Screen**
+![Intro Screen](screenshots/Intro%20Screen.png)
+
+**Game Setup Form** 
+![Game Setup Form Screen](screenshots/Game%20Setup%20Form%20Screen.png)
+
+**Loading Screen**
+![Loading Screen](screenshots/Loading%20Screen.png)
+
+**Game Interface**
+![Game Interface Screen](screenshots/Game%20Interface%20Scrren.png)
+
+**Results Analysis**
+![Result Screen](screenshots/Result%20Screen.png)
+
+</div>
+
+### Mobile Experience
+<div align="center">
+
+**Mobile Intro Screen**
+![Mobile Intro Screen](screenshots/Moblie%20Intro%20Screen.png)
+
+**Mobile Game Lobby**
+![Mobile Game Lobby Screen](screenshots/Mobile%20Game%20Lobby%20Screen.png)
+
+**Mobile Loading Screen**
+![Mobile Loading Screen](screenshots/Mobile%20Loading%20Screen.png)
+
+**Mobile Game Form**
+![Mobile Game Form Screen](screenshots/Mobile%20Game%20Form%20Screen.png)
+
+**Mobile Game Form 2**
+![Mobile Game Form2 Screen](screenshots/Mobile%20Game%20Form2%20Screen.png)
+
+**Mobile Game Interface**
+![Mobile Game Interface Screen](screenshots/Mobile%20Game%20Interface%20Screen.png)
+
+**Mobile Results Screen**
+![Mobile Game Results Screen](screenshots/Mobile%20Game%20Results%20Screen.png)
+
+</div>
+
 ## ✨ Enhanced UI Features
 
 ### Modern Design Elements
